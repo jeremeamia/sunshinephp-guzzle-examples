@@ -1,20 +1,20 @@
 {
     "name": "jeremeamia/twilio-guzzle",
     "require": {
-        "guzzlehttp/guzzle": "*",
-        "guzzlehttp/command": "*",
+        "guzzlehttp/guzzle": "~5.0",
         "guzzlehttp/guzzle-services": "*",
         "guzzlehttp/retry-subscriber": "*",
-        "guzzlehttp/log-subscriber": "*",
-        "guzzlehttp/message-integrity-subscriber": "*",
-        "guzzlehttp/oauth-subscriber": "*",
-        "guzzlehttp/progress-subscriber": "*",
-        "twilio/sdk": "*"
+        "guzzlehttp/log-subscriber": "*"
     },
     "authors": [
         {
             "name": "Jeremy Lindblom",
             "email": "jeremeamia@gmail.com"
         }
-    ]
+    ],
+    "autoload": {
+        "psr-4": {
+            "Twilio\\": "src/"
+        }
+    }
 }
